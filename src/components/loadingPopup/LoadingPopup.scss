@@ -1,0 +1,42 @@
+.loading-popup {
+  width: 100%;
+  height: 100%;
+  z-index: 2500;
+  opacity: 1;
+  visibility: visible;
+  transition: all ease-in-out 0.2s;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .loading-dots > div {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #ff529c;
+    display: inline-block;
+    border-radius: 50%;
+    animation: 1.5s bounce infinite ease-in-out both;
+  }
+  .bounce {
+    animation-delay: -0.3s !important;
+  }
+  .bounce2 {
+    animation-delay: -0.15s !important;
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(0);
+    }
+
+    80% {
+      transform: scale(0);
+    }
+
+    100% {
+      transform: scale(0);
+    }
+    40% {
+      transform: scale(1);
+    }
+  }
+}

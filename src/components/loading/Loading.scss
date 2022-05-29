@@ -1,0 +1,123 @@
+.loading {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  opacity: 1;
+  visibility: visible;
+  transition: all ease-in-out 0.6s;
+  position: absolute;
+
+  .center {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    .ring {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 50%;
+      border-radius: 50%;
+      animation: ring 1s linear infinite;
+      &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+    }
+    .load-text {
+      position: absolute;
+      text-align: center;
+      span {
+        color: #ff529c;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+
+        display: inline-block;
+        animation: textloading 1s linear infinite;
+        transition: all 1s;
+      }
+    }
+  }
+}
+.hide-loading {
+  opacity: 0;
+  visibility: hidden;
+}
+.load-text span:nth-child(1) {
+  animation-delay: 0.1s !important;
+}
+.load-text span:nth-child(2) {
+  animation-delay: 0.2s !important;
+}
+.load-text span:nth-child(3) {
+  animation-delay: 0.3s !important;
+}
+.load-text span:nth-child(4) {
+  animation-delay: 0.4s !important;
+}
+.load-text span:nth-child(5) {
+  animation-delay: 0.5s !important;
+}
+.load-text span:nth-child(6) {
+  animation-delay: 0.6s !important;
+}
+.load-text span:nth-child(7) {
+  animation-delay: 0.7s !important;
+}
+.load-text span:nth-child(8) {
+  animation-delay: 0.8s !important;
+}
+.load-text span:nth-child(9) {
+  animation-delay: 0.9s !important;
+}
+.load-text span:nth-child(10) {
+  animation-delay: 1s !important;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #ff00e4;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #ff529c;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #ff68f0;
+  }
+}
+@keyframes textloading {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-1%);
+    color: #ff529c;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .ring {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .load-text {
+    span {
+      font-size: 1rem !important;
+    }
+  }
+}

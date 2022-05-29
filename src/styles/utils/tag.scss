@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'TTCOMMONS-REGULAR';
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+img,
+iframe {
+  vertical-align: middle;
+}
+img,
+object,
+embed {
+  max-width: 100%;
+}
+[role='button'],
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+input,
+button,
+select,
+textarea {
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+ins {
+  text-decoration: auto;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+label {
+  display: inline-block;
+}
+label,
+span,
+label::before,
+label::after {
+  box-sizing: border-box;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}

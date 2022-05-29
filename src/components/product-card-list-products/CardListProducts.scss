@@ -1,0 +1,13 @@
+.item {
+  transition: all, 0.5s;
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (max-width: 1199px) {
+  .item {
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+  }
+}

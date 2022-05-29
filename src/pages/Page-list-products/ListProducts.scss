@@ -1,0 +1,118 @@
+.top-list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  .filter {
+    position: static;
+    cursor: pointer;
+    .show-filter {
+      border: 1px solid #ff529c;
+      color: #ff529c;
+      padding: 8px 30px 8px 15px;
+      text-transform: uppercase;
+      position: relative;
+      border-radius: 25px;
+      font-size: 18px;
+      &::after {
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0, -50%);
+        font-family: 'FontAwesome';
+        font-weight: bold;
+      }
+    }
+    .show-filter-mobi {
+      display: none;
+    }
+    &:hover {
+      .show-filter-pc {
+        border-bottom: 1px solid transparent;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        &::after {
+          content: '-' !important;
+        }
+      }
+    }
+  }
+  .facet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title-facet {
+      float: left;
+      padding-right: 10px;
+    }
+    .switch-facet {
+      display: flex;
+      .item-facet {
+        padding-left: 10px;
+        transition: all, 0.3s;
+        cursor: pointer;
+        .line-col {
+          position: relative;
+          width: 7px;
+          display: inline-block;
+          height: 16px;
+          margin: 2px 1px 0;
+          background-color: #b3b3b3;
+        }
+      }
+      .active-col .line-col,
+      .item-facet:hover .line-col {
+        background-color: #000000;
+      }
+    }
+  }
+  .filter-mobi {
+    display: none;
+  }
+}
+.col1,
+.col2 {
+  display: none;
+}
+.col-12 {
+  float: left;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.list-product {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (max-width: 1199px) {
+  .list-product {
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+  }
+}
+@media (max-width: 991px) {
+  .col2 {
+    display: block;
+  }
+  .col4 {
+    display: none;
+  }
+
+  .filter-pc {
+    display: none;
+  }
+  .show-filter-mobi,
+  .filter-mobi {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  .col1 {
+    display: block;
+  }
+  .col3 {
+    display: none;
+  }
+}

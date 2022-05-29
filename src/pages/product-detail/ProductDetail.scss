@@ -1,0 +1,272 @@
+.page-product {
+}
+.product-info {
+  .title-product {
+    font-size: 36px;
+    line-height: initial;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    font-weight: normal;
+  }
+  .product-tem {
+    display: flex;
+    margin: 15px 0;
+    .percent-discount {
+      background-color: #ff529c !important;
+      color: white;
+      text-transform: uppercase;
+    }
+    .percent-discount {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 9px 20px;
+      margin-right: 18px;
+      height: 35px;
+      font-size: 1.125rem;
+      border-radius: 50px;
+    }
+  }
+
+  .price {
+    margin: 20px 0;
+    display: flex;
+    font-size: 38px;
+    font-family: TTCOMMONS-REGULAR;
+    line-height: 1;
+    ins {
+      margin-right: 25px;
+      .amount,
+      .currency {
+        color: #ff529c;
+        font-weight: 200 !important;
+      }
+      .currency {
+        padding-left: 2px;
+      }
+    }
+  }
+  del {
+    text-decoration: wavy;
+    .amount,
+    .currency {
+      color: #ff529c;
+      font-weight: 200 !important;
+    }
+    .line_through {
+      text-decoration: line-through;
+      color: #c6c6c6 !important;
+    }
+  }
+  .group-attr {
+    font-family: 'GARAMONDPREMRPRO';
+    margin-top: 35px;
+    .title-attr {
+      font-style: italic;
+      color: #000000;
+      font-size: 23px;
+      margin-bottom: 10px;
+      font-family: 'GARAMONDPREMRPRO';
+      .error {
+        color: red;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 0.75rem;
+      }
+    }
+  }
+  .group-size {
+    .list-size {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        cursor: pointer;
+        font-family: 'GARAMONDPREMRPRO';
+        transition: all ease-in-out 0.1s;
+        &:hover {
+          background-color: #ff529c !important;
+          color: white;
+        }
+      }
+      .lisize {
+        border: 1px solid #d9d9d9;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        border-radius: 25px;
+      }
+      .active-size {
+        background-color: #ff529c !important;
+        color: #ffffff;
+      }
+    }
+  }
+  .cus-quantity {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000000;
+  }
+  .quantity {
+    .quantity-product {
+      display: flex;
+      align-items: center;
+      .total-available {
+        margin-left: 50px;
+        font-style: italic;
+        font-size: 20px;
+        margin-top: 12px;
+        color: #a9a9a9;
+      }
+      .total-available {
+      }
+    }
+  }
+  .buy-now {
+    background-color: #ff529c;
+    color: white;
+    margin-top: 15px;
+    padding: 15px 0;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 23px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .out-of-stock {
+    color: #ff529c !important;
+  }
+  .promotion-content {
+    padding-top: 10px;
+    margin-top: 40px;
+    font-size: 18px;
+    .item-promotion {
+      margin-top: 20px;
+      position: relative;
+      padding-left: 44px;
+      &::before {
+        content: '';
+        background-image: url(../../images/inew.png) !important;
+        top: 0 !important;
+        width: 30px;
+        height: 33px;
+        margin-right: 10px;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        background-size: 100%;
+      }
+    }
+  }
+  .content-product.mobi {
+    display: none;
+  }
+}
+.content-product {
+  margin-top: 45px;
+  margin-left: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  .group-content-product {
+    font-size: 20px;
+    border: 1px solid #ff529c;
+    border-radius: 32px;
+    .head {
+      display: flex;
+      li {
+        border-color: #ff529c !important;
+        font-size: 20px;
+        padding: 15px 10px;
+        width: 50%;
+        border-bottom: 1px solid;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        &:hover {
+          color: white;
+          background-color: #ff529c !important;
+          border-color: #ff529c !important;
+        }
+      }
+      li:first-child {
+        border-right: 1px solid #f15b67;
+        border-top-left-radius: 30px;
+      }
+      li:last-child {
+        border-top-right-radius: 30px;
+      }
+      li.active {
+        background-color: #ff529c !important;
+        border-color: #ff529c !important;
+        color: #ffffff;
+      }
+    }
+    .body {
+      padding: 15px 20px;
+      .hide {
+        display: none;
+      }
+      li {
+        display: flex;
+        padding: 10px 0;
+        span {
+          width: 50%;
+          float: left;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .title-product {
+    font-size: 1.375rem !important;
+  }
+  .product-info {
+    margin-top: 20px;
+  }
+  .group-attr {
+    margin-top: 20px !important;
+  }
+  .title-attr {
+    font-size: 0.875rem !important;
+  }
+  .buy-now,
+  .add-to-card {
+    font-size: 1rem !important;
+  }
+  .group-content-product li,
+  .promotion-content {
+    font-size: 16px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hide {
+    display: none;
+  }
+  .title-product {
+    font-size: 1.125rem !important;
+  }
+  .content-product.mobi {
+    display: block !important;
+  }
+}

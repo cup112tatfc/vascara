@@ -1,0 +1,76 @@
+.view {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .mobi {
+    display: block !important;
+  }
+}
+.block {
+  .title-block {
+    color: #ff529c;
+    margin: 50px 0 20px;
+    text-align: center;
+    font-size: 2.625rem;
+    position: relative;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+.view-all {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+  color: #808080;
+  text-transform: initial;
+  font-size: 1.25rem;
+  padding-right: 20px;
+  transition: all ease-in-out 0.2s;
+  background-image: url(../../images/next-line.png);
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  background-size: 7px;
+  text-align: center;
+  display: inline-block;
+  font-family: GARAMONDPREMRPRO;
+  font-style: italic;
+  &:hover {
+    color: #f15b67;
+  }
+}
+@media (max-width: 1440px) {
+  .title-block {
+    .view-all {
+      font-size: 1rem !important;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .title-block {
+    font-size: 1.3125rem !important;
+    margin: 35px 0 15px !important;
+  }
+  .view-all {
+    font-size: 0.875rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .title-block {
+    .pc {
+      display: none !important;
+    }
+  }
+  .view-all {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    text-decoration: underline !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    position: unset !important;
+  }
+}

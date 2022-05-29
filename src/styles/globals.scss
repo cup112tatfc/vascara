@@ -1,0 +1,19 @@
+@import './utils/btn.scss';
+@import './utils/column.scss';
+@import './utils/container.scss';
+@import './utils/tag.scss';
+@import './utils/no-active.scss';
+@import './utils/breadcrumb.scss';
+@import './utils/custom.scss';
+@font-face {
+  src: url(./fonts/TT-Commons-Regular.otf);
+  font-family: 'TTCOMMONS-REGULAR';
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  src: url(./fonts/GaramondPremrPro.otf);
+  font-family: 'GARAMONDPREMRPRO';
+  font-style: normal;
+  font-weight: normal;
+}

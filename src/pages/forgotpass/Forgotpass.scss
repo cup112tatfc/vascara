@@ -1,0 +1,57 @@
+.forgotpass {
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.375rem;
+  }
+  .group-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 15px;
+    form {
+      width: 500px;
+      max-width: 100%;
+      .form-group {
+        margin-bottom: 1rem;
+        label {
+          margin-bottom: 5px;
+        }
+        .form-control {
+          border-radius: 0px;
+          font-size: 0.875rem;
+        }
+        .form-control {
+          display: block;
+          width: 100%;
+          padding: 0.5rem 0.75rem;
+          line-height: 1.25;
+          color: #55595c;
+          background-color: #fff;
+          background-image: none;
+          background-clip: padding-box;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+      }
+      button {
+        background-color: #f15b67;
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+        color: white;
+        margin: 15px 0;
+      }
+    }
+    .more-link {
+      a {
+        color: #000000;
+        margin-right: 10px;
+        border-right: 1px solid #000000;
+        padding-right: 10px;
+      }
+      a:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}

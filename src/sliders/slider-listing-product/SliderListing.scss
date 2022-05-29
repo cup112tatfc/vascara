@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1199px) {
+  .slider {
+    .slick-prev {
+      left: -10px;
+    }
+    .slick-next {
+      right: -13px;
+    }
+    .slick-prev,
+    .slick-next {
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
+

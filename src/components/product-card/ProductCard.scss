@@ -1,0 +1,127 @@
+.product-item {
+  margin: 30px 0 0 !important;
+  font-size: 24px !important;
+  cursor: pointer;
+  position: relative;
+  padding: 1px;
+  cursor: pointer;
+  .price {
+    font-size: 27px;
+    margin: 18px 0 10px;
+    display: flex;
+    ins {
+      margin-right: 25px;
+      text-decoration: auto;
+    }
+    .show-color {
+      color: rgb(255, 82, 156);
+    }
+    del {
+      color: #aaaaaa;
+    }
+    .currency {
+      padding-left: 2px;
+    }
+  }
+  .product-title {
+    margin-bottom: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: GARAMONDPREMRPRO-IT;
+    font-style: italic;
+    font-weight: normal;
+  }
+  .product-image {
+    padding: 1px;
+    .after {
+      display: none;
+    }
+  }
+  &:hover {
+    .hov-image {
+      box-shadow: 0 0 10px rgb(255 82 156 / 50%) !important;
+      border: 0 !important;
+    }
+    .product-image {
+      .before {
+        display: none;
+      }
+      .after {
+        display: block;
+      }
+    }
+  }
+  .item-inside {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 50%;
+  }
+  .product-tem {
+    display: flex;
+    .percent-discount {
+      background-color: #ff529c !important;
+      color: white;
+      font-size: 18px;
+      border-radius: 50px;
+      padding: 9px 24px;
+      margin-right: 18px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.product-slide {
+  padding: 0 15px;
+}
+@media (max-width: 1440px) {
+  .product-item{
+    font-size: 18px !important;
+  }
+  .price {
+    font-size: 22px !important;
+  }
+  .product-title {
+   margin-bottom: 12px !important;
+  }
+  .product-tem {
+    .percent-discount {
+      font-size: 14px !important;
+      padding: 9px 10px !important;
+      height: 20px !important;
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .product-tem {
+    .percent-discount {
+      font-size: 0.6875rem;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .price {
+    font-size: 16px !important;
+  }
+  .product-title {
+    font-size: 0.875rem;
+  }
+  .product-tem {
+    .percent-discount {
+      font-size: 0.5625rem;
+      margin-right: 10px;
+      line-height: 1;
+      padding: 0 10px;
+      height: 21px;
+    }
+  }
+}
+@media (max-width: 543px) {
+  .product-tem {
+    .percent-discount {
+      height: 18px;
+    }
+  }
+}
